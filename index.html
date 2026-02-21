@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>VTEA Asesores</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor-logo-header">
+        <span class="logo-header"> VTAE Asesores</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li class="item-menu-header">
+            <a class="link-menu-header" href="#">Home</a>
+          </li>
+          <li class="item-menu-header">
+            <a class="link-menu-header" href="#servicios">Servicios</a>
+          </li>
+          <li class="item-menu-header">
+            <a class="link-menu-header" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="seccion-home">
+      <h1 class="leyenda-seccion-home">
+        Asesores especializados en trámites de visas
+      </h1>
+      <div class="contenedor-img-blackout-seccion-home">
+        <div class="blackout"></div>
+        <img class="img-seccion-home" src="./assets/img/home.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="servicios" class="seccion-servicios">
+      <span class="titilo-seccion-servicios">Nuestros servicios</span>
+
+      <div class="servicio-visa">
+        <img src="./assets/img/visa.webp" alt="" class="img-servicio-visa" />
+        <div class="contenerdor-informacion-servicio-visa">
+          <div class="informacion-servicio-visa">
+            <span class="titulo-servicio-visa">Tramitamos tu visa</span>
+            <span class="descripcion-servicio-visa"
+              >Tramitamos tu visa rápido y sin errores para que puedas obtener
+              tu entrevista lo más rápido posible.
+            </span>
+          </div>
+          <a href="#" class="link-agendar-cita">Agendar una cita</a>
+        </div>
+      </div>
+
+      <div class="servicio-entrevista">
+        <div class="contenerdor-informacion-servicio-entrevista">
+          <div class="informacion-servicio-entrevista">
+            <span class="titulo-servicio-entrevista"
+              >Preparación para entrevista</span
+            >
+            <span class="descripcion-servicio-entrevista"
+              >Te preparamos de manera efectiva para que sepas qué responder en
+              tu entrevista de visado.
+            </span>
+          </div>
+          <a href="#" class="link-agendar-cita">Agendar una cita</a>
+        </div>
+        <img
+          src="./assets/img/entrevista.jpg"
+          alt=""
+          class="img-servicio-entrevista"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="titulo-header"
+        >Contáctanos y cumple el sueño de viajar a Estados Unidos</span
+      >
+
+      <form id="contacto" class="formulario-de-contacto">
+        <div class="casilla-nombre-formulario">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre completo"
+            required
+          />
+        </div>
+        <div class="casilla-correo-formulario">
+          <input
+            type="email"
+            name="correo"
+            placeholder="Correo electrónico"
+            required
+          />
+        </div>
+        <div class="contenedor-btn-contactar-formulario">
+          <button type="submit" class="btn-contactar-formulario">
+            Contactar
+          </button>
+        </div>
+
+        <!-- Campos ocultos de Formspree de prueba -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo mensaje de contacto desde mi web"
+        />
+        <input type="hidden" name="_replyto" value="" />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Gracias por contactarnos, pronto te responderemos."
+        />
+      </form>
+      <div id="mensaje-envio"></div>
+     <span>© Copyright VTAE Asesores 2026  </span>
+    </footer>
+  </body>
+  <script src="./js/send_email.js"></script>
+</html>
+

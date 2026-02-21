@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'inter';
+  src: url('../../assets/font/Inter/static/Inter_18pt-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'inter';
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}

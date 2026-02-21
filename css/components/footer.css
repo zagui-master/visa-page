@@ -1,0 +1,80 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.titulo-header {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.formulario-de-contacto input[type="text"],
+.formulario-de-contacto input[type="email"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  width: 250px;
+  max-width: 90vw;
+  margin: 10px 0 30px 0;
+  padding: 8px 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.formulario-de-contacto input[type="text"]::placeholder,
+.formulario-de-contacto input[type="email"]::placeholder {
+  color: #bbb;
+  align-items:center;
+}
+
+.formulario-de-contacto input[type="text"]:focus,
+.formulario-de-contacto input[type="email"]:focus {
+  border-bottom-color: #1e90ff;
+}
+
+.btn-contactar-formulario {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 10px 35px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+}
+
+.btn-contactar-formulario:hover,
+.btn-contactar-formulario:focus {
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+  color: #fff;
+  outline: none;
+}
+
+#mensaje-envio {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 18px;
+}
+
+@media (max-width: 400px) {
+
+  .formulario-de-contacto input[type="text"],
+  .formulario-de-contacto input[type="email"] {
+    width: 90vw;
+  }
+
+  .btn-contactar-formulario {
+    width: 90vw;
+    padding: 12px 0;
+  }
+}

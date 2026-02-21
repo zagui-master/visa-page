@@ -1,0 +1,6 @@
+
+@import "./reset/base.css";
+@import "./components/header.css";
+@import "./components/seccion-home.css";
+@import "./components/seccion-servicios.css";
+@import "./components/footer.css";

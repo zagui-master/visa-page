@@ -1,0 +1,86 @@
+.seccion-servicios {
+  padding: 120px 10%;
+  background: #f2f2f2;
+}
+
+.titilo-seccion-servicios {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.servicio-visa,
+.servicio-entrevista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.img-servicio-visa,
+.img-servicio-entrevista {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.contenerdor-informacion-servicio-visa,
+.contenerdor-informacion-servicio-entrevista {
+  max-width: 450px;
+}
+
+.titulo-servicio-visa,
+.titulo-servicio-entrevista {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.descripcion-servicio-visa,
+.descripcion-servicio-entrevista {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.link-agendar-cita {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.link-agendar-cita:hover {
+  background: #333;
+}
+
+@media (max-width: 900px) {
+
+  .servicio-visa,
+  .servicio-entrevista {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .descripcion-servicio-visa,
+  .descripcion-servicio-entrevista {
+    margin: 0 auto 30px;
+  }
+
+  .img-servicio-visa,
+  .img-servicio-entrevista {
+    height: auto;
+  }
+}
