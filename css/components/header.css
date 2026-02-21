@@ -1,4 +1,4 @@
-.header{
+/* .header{
   width: 80%;
   height: 70px;
   display: flex;
@@ -34,4 +34,83 @@
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+}
+ */
+
+ /* Header principal */
+.header {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-header {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.item-menu-header {
+  list-style: none;
+}
+
+.link-menu-header {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.link-menu-header:hover {
+  color: #ccc;
+}
+
+/* Responsive: pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 15px; /* espacio vertical entre links */
+    margin-top: 35px;
+  }
+
+  .link-menu-header {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-header {
+    font-size: 22px;
+  }
+
+  .link-menu-header {
+    font-size: 16px;
+  }
+
+  .header {
+    width: 90%;
+    margin-top: 15px;
+  }
 }
