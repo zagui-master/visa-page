@@ -17,7 +17,7 @@
       <nav>
         <ul class="menu">
           <li class="item-menu-header">
-            <a class="link-menu-header" href="#">Home</a>
+            <a class="link-menu-header" href="#home">Home</a>
           </li>
           <li class="item-menu-header">
             <a class="link-menu-header" href="#servicios">Servicios</a>
@@ -48,11 +48,15 @@
           <div class="informacion-servicio-visa">
             <span class="titulo-servicio-visa">Tramitamos tu visa</span>
             <span class="descripcion-servicio-visa"
-              >Tramitamos tu visa rápido y sin errores para que puedas obtener
-              tu entrevista lo más rápido posible.
+              >En VTAE Asesores gestionamos tu visa con rapidez y precisión,
+              cuidando cada detalle para evitar errores que puedan retrasar tu
+              trámite. Nuestro objetivo es que obtengas tu entrevista de manera
+              ágil y sin complicaciones, acompañándote en cada paso del proceso
+              para que puedas cumplir tu sueño de viajar a Estados Unidos con
+              total seguridad y confianza.
             </span>
           </div>
-          <a href="#" class="link-agendar-cita">Agendar una cita</a>
+          <a href="#contacto" class="link-agendar-cita">Contactar un asesor</a>
         </div>
       </div>
 
@@ -63,16 +67,68 @@
               >Preparación para entrevista</span
             >
             <span class="descripcion-servicio-entrevista"
-              >Te preparamos de manera efectiva para que sepas qué responder en
-              tu entrevista de visado.
+              >Te preparamos de manera completa y estratégica para tu entrevista
+              de visado, guiándote sobre cómo responder correctamente cada
+              pregunta y manejando con seguridad cualquier situación. Nuestro
+              objetivo es que llegues confiado y bien preparado, aumentando tus
+              posibilidades de éxito y haciendo que el proceso sea mucho más
+              tranquilo y eficiente.
             </span>
           </div>
-          <a href="#" class="link-agendar-cita">Agendar una cita</a>
+          <a href="#contacto" class="link-agendar-cita">Contactar un asesor</a>
         </div>
         <img
           src="./assets/img/entrevista.jpg"
           alt=""
           class="img-servicio-entrevista"
+        />
+      </div>
+
+      <!-- Revisión y organización de documentos -->
+      <div class="servicio-documentos">
+        <img
+          src="./assets/img/documentos.jpg"
+          alt="Revisión de documentos"
+          class="img-servicio-documentos"
+        />
+        <div class="contenedor-informacion-servicio-documentos">
+          <div class="informacion-servicio-documentos">
+            <span class="titulo-servicio-documentos"
+              >Revisión y organización de documentos</span
+            >
+            <span class="descripcion-servicio-documentos">
+              Nos encargamos de que todos tus formularios, certificados y
+              documentos requeridos estén completos, correctos y organizados de
+              manera eficiente. Incluye revisión de información, traducciones
+              oficiales y apostillados, asegurando que tu proceso de visa sea
+              fluido y sin contratiempos.
+            </span>
+          </div>
+          <a href="#contacto" class="link-agendar-cita">Contactar un asesor</a>
+        </div>
+      </div>
+
+      <!-- Servicios adicionales de valor -->
+      <div class="servicio-adicionales">
+        <div class="contenedor-informacion-servicio-adicionales">
+          <div class="informacion-servicio-adicionales">
+            <span class="titulo-servicio-adicionales"
+              >Servicios adicionales de valor</span
+            >
+            <span class="descripcion-servicio-adicionales">
+              Ofrecemos servicios complementarios que facilitan tu experiencia,
+              como asesoría básica en trámites legales de inmigración,
+              seguimiento personalizado de citas y fechas importantes, y acceso
+              a guías y tutoriales prácticos para que estés completamente
+              preparado durante todo el proceso de solicitud de tu visa.
+            </span>
+          </div>
+          <a href="#contacto" class="link-agendar-cita">Contactar un asesor</a>
+        </div>
+        <img
+          src="./assets/img/adicionales.jpg"
+          alt="Servicios adicionales"
+          class="img-servicio-adicionales"
         />
       </div>
     </section>
@@ -99,6 +155,16 @@
             required
           />
         </div>
+        <div class="casilla-celular-formulario">
+          <input
+            type="tel"
+            name="celular"
+            placeholder="Número de celular"
+            pattern="[0-9\s\-()+]{7,15}"
+            title="Por favor ingresa un número válido"
+            required
+          />
+        </div>
         <div class="contenedor-btn-contactar-formulario">
           <button type="submit" class="btn-contactar-formulario">
             Contactar
@@ -119,9 +185,8 @@
         />
       </form>
       <div id="mensaje-envio"></div>
-     <span>© Copyright VTAE Asesores 2026  </span>
+      <span>© Copyright VTAE Asesores 2026 </span>
     </footer>
   </body>
   <script src="./js/send_email.js"></script>
 </html>
-

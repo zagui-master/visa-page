@@ -14,7 +14,8 @@
 }
 
 .formulario-de-contacto input[type="text"],
-.formulario-de-contacto input[type="email"] {
+.formulario-de-contacto input[type="email"],
+.formulario-de-contacto input[type="tel"] {
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -29,14 +30,10 @@
 }
 
 .formulario-de-contacto input[type="text"]::placeholder,
-.formulario-de-contacto input[type="email"]::placeholder {
+.formulario-de-contacto input[type="email"]::placeholder,
+.formulario-de-contacto input[type="tel"]::placeholder {
   color: #bbb;
   align-items:center;
-}
-
-.formulario-de-contacto input[type="text"]:focus,
-.formulario-de-contacto input[type="email"]:focus {
-  border-bottom-color: #1e90ff;
 }
 
 .btn-contactar-formulario {
@@ -53,9 +50,9 @@
 
 .btn-contactar-formulario:hover,
 .btn-contactar-formulario:focus {
-  background-color: #1e90ff;
-  border-color: #1e90ff;
-  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
   outline: none;
 }
 
@@ -69,7 +66,8 @@
 @media (max-width: 400px) {
 
   .formulario-de-contacto input[type="text"],
-  .formulario-de-contacto input[type="email"] {
+  .formulario-de-contacto input[type="email"],
+  .formulario-de-contacto input[type="tel"] {
     width: 90vw;
   }
 

@@ -12,7 +12,9 @@
 }
 
 .servicio-visa,
-.servicio-entrevista {
+.servicio-entrevista,
+.servicio-documentos,
+.servicio-adicionales {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,20 +23,27 @@
 }
 
 .img-servicio-visa,
-.img-servicio-entrevista {
+.img-servicio-entrevista,
+.img-servicio-documentos,
+.img-servicio-adicionales {
   width: 350px;
   height: 450px;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .contenerdor-informacion-servicio-visa,
-.contenerdor-informacion-servicio-entrevista {
+.contenerdor-informacion-servicio-entrevista,
+.contenedor-informacion-servicio-documentos,
+.contenedor-informacion-servicio-adicionales {
   max-width: 450px;
 }
 
 .titulo-servicio-visa,
-.titulo-servicio-entrevista {
+.titulo-servicio-entrevista,
+.titulo-servicio-documentos,
+.titulo-servicio-adicionales {
   display: block;
   font-size: 28px;
   font-weight: 700;
@@ -42,7 +51,9 @@
 }
 
 .descripcion-servicio-visa,
-.descripcion-servicio-entrevista {
+.descripcion-servicio-entrevista,
+.descripcion-servicio-documentos,
+.descripcion-servicio-adicionales {
   display: block;
   font-size: 16px;
   line-height: 1.6;
@@ -67,20 +78,34 @@
 }
 
 @media (max-width: 900px) {
-
   .servicio-visa,
-  .servicio-entrevista {
-    grid-template-columns: 1fr;
+  .servicio-entrevista,
+  .servicio-documentos,
+  .servicio-adicionales {
+    flex-direction: column;
     text-align: center;
   }
 
-  .descripcion-servicio-visa,
-  .descripcion-servicio-entrevista {
-    margin: 0 auto 30px;
+  .img-servicio-visa,
+  .img-servicio-entrevista,
+  .img-servicio-documentos,
+  .img-servicio-adicionales {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
-  .img-servicio-visa,
-  .img-servicio-entrevista {
-    height: auto;
+  .contenerdor-informacion-servicio-visa,
+  .contenerdor-informacion-servicio-entrevista,
+  .contenedor-informacion-servicio-documentos,
+  .contenedor-informacion-servicio-adicionales {
+    max-width: 100%;
+  }
+
+  .descripcion-servicio-visa,
+  .descripcion-servicio-entrevista,
+  .descripcion-servicio-documentos,
+  .descripcion-servicio-adicionales {
+    margin: 0 auto 30px;
   }
 }
